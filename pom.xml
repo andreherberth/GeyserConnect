@@ -6,7 +6,7 @@
 
     <groupId>org.geysermc</groupId>
     <artifactId>geyser-connect</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
 
     <name>GeyserConnect</name>
     <description>Allows for players from Minecraft Bedrock Edition to join Minecraft Java Edition servers via a server list.</description>
@@ -22,13 +22,13 @@
 
     <organization>
         <name>GeyserMC</name>
-        <url>https://github.com/GeyserMC/GeyserConnect/blob/master/pom.xml</url>
+        <url>https://github.com/andreherberth/GeyserConnect/blob/master/pom.xml</url>
     </organization>
 
     <scm>
-        <connection>scm:git:https://github.com/GeyserMC/GeyserConnect.git</connection>
-        <developerConnection>scm:git:git@github.com:GeyserMC/GeyserConnect.git</developerConnection>
-        <url>https://github.com/GeyserMC/GeyserConnect</url>
+        <connection>scm:git:https://github.com/andreherberth/GeyserConnect.git</connection>
+        <developerConnection>scm:git:git@github.com:andreherberth/GeyserConnect.git</developerConnection>
+        <url>https://github.com/andreherberth/GeyserConnect</url>
     </scm>
 
     <repositories>

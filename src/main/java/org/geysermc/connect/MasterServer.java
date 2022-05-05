@@ -172,6 +172,7 @@ public class MasterServer {
         createGeyserProxy();
 
         logger.info("Server started on " + geyserConnectConfig.getAddress() + ":" + port);
+		logger.info("Server started.");
     }
 
     public void shutdown() {
