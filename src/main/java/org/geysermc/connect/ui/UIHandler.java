@@ -50,9 +50,9 @@ public class UIHandler {
      */
     public static Form getMainMenu() {
         SimpleForm.Builder window = SimpleForm.builder().title("Main Menu");
-
-        window.button("Official Servers");
-        window.button("Geyser Servers");
+		
+        window.button("Bedrock");
+        window.button("Java Proxy");
 
         // Add a buttons for custom servers
         if (MasterServer.getInstance().getGeyserConnectConfig().getCustomServers().isEnabled()) {
@@ -61,7 +61,7 @@ public class UIHandler {
         }
 
         window.button("Disconnect");
-
+		
         return window.build();
     }
 
