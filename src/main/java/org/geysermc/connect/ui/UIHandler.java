@@ -49,8 +49,8 @@ public class UIHandler {
      * @return A {@link SimpleForm} object
      */
     public static Form getMainMenu() {
-        SimpleForm.Builder window = SimpleForm.builder().title("Main Menu");
-		
+       // SimpleForm.Builder window = SimpleForm.builder().title("Main Menu");
+	/**	
         window.button("Bedrock");
         window.button("Java Proxy");
 
@@ -63,6 +63,10 @@ public class UIHandler {
         window.button("Disconnect");
 		
         return window.build();
+	*/
+	player.setServerCategory(ServerCategory.OFFICIAL);    
+	player.sendWindow(FormID.LIST_SERVERS, getServerList(player.getCurrentServers(), player.getServerCategory()));   
+	    
     }
 
     /**
