@@ -171,8 +171,9 @@ public class MasterServer {
         // Create the Geyser instance
         createGeyserProxy();
 
-        logger.info("Server started on " + geyserConnectConfig.getAddress() + ":" + port);
-		logger.info("Server started.");
+        logger.info("Server starting on " + geyserConnectConfig.getAddress() + ":" + port);
+	// Added to make gayserconnect usable with AMPs without setting up a custom template trough GenericModule
+	logger.info("Server started.");
     }
 
     public void shutdown() {
