@@ -49,24 +49,17 @@ public class UIHandler {
      * @return A {@link SimpleForm} object
      */
     public static Form getMainMenu() {
-       // SimpleForm.Builder window = SimpleForm.builder().title("Main Menu");
-	/**	
-        window.button("Bedrock");
-        window.button("Java Proxy");
+        SimpleForm.Builder window = SimpleForm.builder().title("Main Menu");
+        window.button("Server List");
 
         // Add a buttons for custom servers
         if (MasterServer.getInstance().getGeyserConnectConfig().getCustomServers().isEnabled()) {
             window.button("Custom Servers");
             window.button("Direct connect");
         }
-
-        window.button("Disconnect");
-		
+		window.button("Disconnect");
         return window.build();
-	*/
-	player.setServerCategory(ServerCategory.OFFICIAL);    
-	player.sendWindow(FormID.LIST_SERVERS, getServerList(player.getCurrentServers(), player.getServerCategory()));   
-	    
+
     }
 
     /**
@@ -218,18 +211,14 @@ public class UIHandler {
                 player.setServerCategory(ServerCategory.OFFICIAL);
                 break;
 
-            case 1:
-                player.setServerCategory(ServerCategory.GEYSER);
-                break;
-
             default:
                 // If we have custom servers enabled there are a few extra buttons
                 if (MasterServer.getInstance().getGeyserConnectConfig().getCustomServers().isEnabled()) {
                     switch (data.getClickedButtonId()) {
-                        case 2:
+                        case 1:
                             player.setServerCategory(ServerCategory.CUSTOM);
                             break;
-                        case 3:
+                        case 2:
                             player.sendWindow(FormID.DIRECT_CONNECT, getDirectConnect());
                             return;
 
